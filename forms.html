@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Формы</title>
+</head>
+<body>
+    <p><a href="index.html">Вернуться на главную</a></p>
+    <p><a href="#form">Перейти к форме</a></p>
+
+    <h1>Тема занятия: Формы</h1>
+    <p>Я изучаю верстку формы на HTML</p>
+
+    <form action="" method="post" id="form">
+        <p class="m0">Фамилия</p>
+        <input type="text" placeholder="Введите фамилию" name="lastname" required size="30">
+        <p class="m0">Имя</p>
+        <input type="text" placeholder="Введите имя" name="firstname" required size="30">
+        <p class="m0">Электронная почта</p>
+        <input type="email" placeholder="Введите почту" required size="30">
+        <p class="m0">Школа и класс</p>
+        <input type="text" placeholder="Введите школу и класс" size="30">
+        <p class="m0">Курс</p>
+        <input type="text" name="course-name" value="HTML, CSS" readonly size="30">
+        <p class="m0">Группа</p>
+        <input type="text" name="group" placeholder="Введите номер группы" required size="30">
+        <input type="color">
+        <p><select name="age" id="">
+            <option disabled selected>Выберите свой возраст</option>
+            <option value="18-25">18-25</option>
+            <option value="26-30">26-30</option>
+            <option value="31-45">31-45</option>
+        </select></p>
+        <textarea name="request" id="" cols="50" rows="20" placeholder="Введите свой вопрос" maxlength="500"></textarea>
+        <p class="m0"><input type="submit" name="button" value="Отправить данные"></p>
+    </form>
+</body>
+</html>
